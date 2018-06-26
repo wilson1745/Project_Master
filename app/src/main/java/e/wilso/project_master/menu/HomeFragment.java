@@ -13,13 +13,14 @@ import e.wilso.project_master.AlarmActivity;
 import e.wilso.project_master.LightTestActivity;
 import e.wilso.project_master.MainActivity;
 import e.wilso.project_master.R;
+import e.wilso.project_master.SnoreActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-   private Button btn_alarm, btn_light;
+   private Button btn_alarm, btn_light, btn_snore;
    private View view;
    private Intent intent;
 
@@ -34,6 +35,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
       btn_alarm.setOnClickListener(this);
       btn_light.setOnClickListener(this);
+      btn_snore.setOnClickListener(this);
 
       // Inflate the layout for this fragment
       return view;
@@ -43,6 +45,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
       view = inflater.inflate(R.layout.fragment_home, container, false);
       btn_alarm = view.findViewById(R.id.btn_alarm);
       btn_light = view.findViewById(R.id.btn_light);
+      btn_snore = view.findViewById(R.id.btn_snoremove);
 
    }
 
@@ -59,6 +62,11 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
          intent = new Intent(getActivity(), LightTestActivity.class);
          startActivity(intent);
          Toast.makeText(getActivity(), "LightTestActivity", Toast.LENGTH_SHORT).show();
+      }
+      else if(i == btn_snore.getId()) {
+         intent = new Intent(getActivity(), SnoreActivity.class);
+         startActivity(intent);
+         Toast.makeText(getActivity(), "SnoreActivity", Toast.LENGTH_SHORT).show();
       }
    }
 }

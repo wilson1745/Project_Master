@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "e.wilso.project_master"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -30,4 +30,5 @@ dependencies {
     implementation 'com.sun.mail:android-mail:1.5.5'
     implementation 'com.sun.mail:android-activation:1.5.5'
     implementation 'com.android.support:design:27.1.1'
+    implementation 'io.github.privacystreams:privacystreams-android-sdk:0.1.7'
 }
