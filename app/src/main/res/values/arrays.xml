@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="advance">
+        <item>Memo</item>
+        <item>Personal Information</item>
+        <item>Output Result</item>
+        <item>Language</item>
+        <item>Feedback</item>
+    </string-array>
+
+</resources>
+
