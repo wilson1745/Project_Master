@@ -3,6 +3,7 @@
     package="e.wilso.project_master">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="10" />
 
     <application
         android:allowBackup="true"
