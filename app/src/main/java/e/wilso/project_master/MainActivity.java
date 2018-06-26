@@ -48,24 +48,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
       // Handle navigation view item clicks here.
       int id = item.getItemId();
 
-      if (id == R.id.nav_home) {
+      if(id == R.id.nav_home) {
          android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
          ft.replace(R.id.flMain, new HomeFragment());
          ft.commit();
       }
-      else if (id == R.id.nav_trend) {
+      else if(id == R.id.nav_trend) {
          android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
          ft.replace(R.id.flMain, new TrendFragment()).addToBackStack(null);
          ft.commit();
       }
-      else if (id == R.id.nav_advance) {
+      else if(id == R.id.nav_advance) {
          android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
          ft.replace(R.id.flMain, new AdvanceFragment()).addToBackStack(null);
          ft.commit();
       }
 
 
-      else if (id == R.id.nav_setting) {
+      else if(id == R.id.nav_setting) {
          intent = new Intent(this, SettingActivity.class);
          startActivity(intent);
       }
@@ -108,7 +108,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
       DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
       if (drawer.isDrawerOpen(GravityCompat.START)) {
          drawer.closeDrawer(GravityCompat.START);
-      } else {
+      }
+      else {
          super.onBackPressed();
       }
    }

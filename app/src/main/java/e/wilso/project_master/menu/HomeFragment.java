@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import e.wilso.project_master.AlarmActivity;
+import e.wilso.project_master.LightTestActivity;
 import e.wilso.project_master.MainActivity;
 import e.wilso.project_master.R;
 
@@ -48,7 +50,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
    public void onClick(View v) {
       int i = v.getId();
 
-      /*if(i == btn_alarm.getId()) {
+      if(i == btn_alarm.getId()) {
          intent = new Intent(getActivity(), AlarmActivity.class);
          startActivity(intent);
          Toast.makeText(getActivity(), "AlarmActivity", Toast.LENGTH_SHORT).show();
@@ -57,6 +59,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
          intent = new Intent(getActivity(), LightTestActivity.class);
          startActivity(intent);
          Toast.makeText(getActivity(), "LightTestActivity", Toast.LENGTH_SHORT).show();
-      }*/
+      }
    }
 }
