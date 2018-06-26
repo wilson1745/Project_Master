@@ -1,17 +1,18 @@
-package e.wilso.project_master;
+package e.wilso.project_master.advance;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class AlarmActivity extends AppCompatActivity {
+import e.wilso.project_master.R;
+
+public class LanguageActivity extends AppCompatActivity {
 
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
-      setContentView(R.layout.activity_alarm);
-
-      getSupportActionBar().setTitle("Alarm Setting");
+      setContentView(R.layout.activity_language);
+      getSupportActionBar().setTitle("Language");
       setBackbutton();
    }
 
@@ -37,3 +38,4 @@ public class AlarmActivity extends AppCompatActivity {
       return super.onOptionsItemSelected(item);
    }
 }
+

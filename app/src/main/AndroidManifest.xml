@@ -27,7 +27,10 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".AlarmActivity" />
-        <activity android:name=".LightTestActivity"></activity>
+        <activity android:name=".LightTestActivity" />
+        <activity android:name=".advance.EmailActivity" />
+        <activity android:name=".advance.LanguageActivity" />
+        <activity android:name=".advance.PersonalActivity"></activity>
     </application>
 
 </manifest>

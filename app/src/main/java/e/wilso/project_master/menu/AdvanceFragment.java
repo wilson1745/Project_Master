@@ -18,6 +18,9 @@ import java.util.List;
 
 import e.wilso.project_master.MainActivity;
 import e.wilso.project_master.R;
+import e.wilso.project_master.advance.EmailActivity;
+import e.wilso.project_master.advance.LanguageActivity;
+import e.wilso.project_master.advance.PersonalActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -53,7 +56,7 @@ public class AdvanceFragment extends Fragment {
                case 0:
                   Toast.makeText(getActivity(), "Memo", Toast.LENGTH_SHORT).show();
                   break;
-               /*case 1:
+               case 1:
                   intent = new Intent(getActivity(), PersonalActivity.class);
                   startActivity(intent);
                   Toast.makeText(getActivity(), "Personal Information", Toast.LENGTH_SHORT).show();
@@ -70,7 +73,7 @@ public class AdvanceFragment extends Fragment {
                   intent = new Intent(getActivity(), EmailActivity.class);
                   startActivity(intent);
                   Toast.makeText(getActivity(), "Feedback", Toast.LENGTH_SHORT).show();
-                  break;*/
+                  break;
             }
          }
       });
