@@ -49,7 +49,11 @@
         <activity android:name=".advance.EmailActivity" />
         <activity android:name=".advance.LanguageActivity" />
         <activity android:name=".advance.PersonalActivity" />
-        <activity android:name=".SnoreActivity"></activity>
+        <activity android:name=".SnoreActivity" />
+        <receiver android:name=".alarm_modules.Alarm_Receiver" />
+        <service android:name=".alarm_modules.RingtonePlayingService"
+            android:enabled="true">
+        </service>
     </application>
 
 </manifest>

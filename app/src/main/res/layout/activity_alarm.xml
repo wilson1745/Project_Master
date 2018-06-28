@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".AlarmActivity">
 
+    <include layout="@layout/content_main_alarm" />
+
 </android.support.constraint.ConstraintLayout>
