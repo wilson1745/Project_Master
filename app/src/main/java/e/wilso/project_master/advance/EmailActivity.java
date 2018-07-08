@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import e.wilso.project_master.R;
 
-public class EmailActivity extends AppCompatActivity implements View.OnClickListener {
+public class EmailActivity extends AppCompatActivity /*implements View.OnClickListener*/ {
 
    EditText etTo, etSub, etMsg;
    Button btSend, btnClear;
@@ -22,17 +22,55 @@ public class EmailActivity extends AppCompatActivity implements View.OnClickList
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_email);
 
-      getSupportActionBar().setTitle("Feedback");
       findView();
+      getSupportActionBar().setTitle("Feedback");
       setBackbutton();
 
+      btSend.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            to = etTo.getText().toString();
+            subject = etSub.getText().toString();
+            message = etMsg.getText().toString();
+
+            if(to.isEmpty()){
+               Toast.makeText(EmailActivity.this, "You must enter a recipient email", Toast.LENGTH_LONG).show();
+            }
+            else if(subject.isEmpty()){
+               Toast.makeText(EmailActivity.this, "You must enter a Subject", Toast.LENGTH_LONG).show();
+            }
+            else if(message.isEmpty()) {
+               Toast.makeText(EmailActivity.this, "You must enter a message", Toast.LENGTH_LONG).show();
+            }
+            else {
+               Intent email = new Intent(Intent.ACTION_SEND);
+               email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});
+               email.putExtra(Intent.EXTRA_SUBJECT, subject);
+               email.putExtra(Intent.EXTRA_TEXT, message);
+
+               //need this to prompts email client only
+               email.setType("message/rfc822");
+               startActivity(Intent.createChooser(email, "Choose Email client :"));
+            }
+         }
+      });
+
+      btnClear.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+            etTo.setText(null);
+            etSub.setText(null);
+            etMsg.setText(null);
+         }
+      });
    }
 
-   @Override
+   /*@Override
    public void onClick(View v) {
       int i = v.getId();
 
       if(i == btSend.getId()) {
+         Toast.makeText(EmailActivity.this, "i == btSend.getId()", Toast.LENGTH_LONG).show();
          to = etTo.getText().toString();
          subject = etSub.getText().toString();
          message = etMsg.getText().toString();
@@ -59,11 +97,12 @@ public class EmailActivity extends AppCompatActivity implements View.OnClickList
       }
 
       else if(i == btnClear.getId()) {
-         etTo.setText(null);
+         Toast.makeText(EmailActivity.this, "i == btnClear.getId()", Toast.LENGTH_LONG).show();
+         /*etTo.setText(null);
          etSub.setText(null);
          etMsg.setText(null);
       }
-   }
+   }*/
 
    private void findView() {
       etTo = findViewById(R.id.toEmailEditText);
