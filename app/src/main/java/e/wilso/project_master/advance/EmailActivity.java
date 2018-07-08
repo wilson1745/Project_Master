@@ -29,14 +29,12 @@ public class EmailActivity extends AppCompatActivity /*implements View.OnClickLi
       btSend.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            to = etTo.getText().toString();
+            //to = etTo.getText().toString();
+            to = "wilson155079@gmail.com";
             subject = etSub.getText().toString();
             message = etMsg.getText().toString();
 
-            if(to.isEmpty()){
-               Toast.makeText(EmailActivity.this, "You must enter a recipient email", Toast.LENGTH_LONG).show();
-            }
-            else if(subject.isEmpty()){
+            if(subject.isEmpty()){
                Toast.makeText(EmailActivity.this, "You must enter a Subject", Toast.LENGTH_LONG).show();
             }
             else if(message.isEmpty()) {
@@ -58,7 +56,7 @@ public class EmailActivity extends AppCompatActivity /*implements View.OnClickLi
       btnClear.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-            etTo.setText(null);
+            //etTo.setText(null);
             etSub.setText(null);
             etMsg.setText(null);
          }
@@ -105,7 +103,7 @@ public class EmailActivity extends AppCompatActivity /*implements View.OnClickLi
    }*/
 
    private void findView() {
-      etTo = findViewById(R.id.toEmailEditText);
+      //etTo = findViewById(R.id.toEmailEditText);
       etSub = findViewById(R.id.subjectEditText);
       etMsg = findViewById(R.id.messageEditText);
       btSend = findViewById(R.id.sendMessageButton);

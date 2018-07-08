@@ -23,13 +23,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/toEmailEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="To"
-        android:inputType="textEmailAddress"/>
-
-    <EditText
         android:id="@+id/subjectEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
