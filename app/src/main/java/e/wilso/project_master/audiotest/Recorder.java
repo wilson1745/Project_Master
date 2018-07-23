@@ -50,7 +50,7 @@ public class Recorder {
       lightRecorder.start(context);
 
       // Start the audio recorder
-      audioRecorder = new AudioRecorder(context, noiseModel,null);
+      audioRecorder = new AudioRecorder(noiseModel, null);
       audioRecorder.start();
 
       // Get the current data every 5 seconds
@@ -73,11 +73,11 @@ public class Recorder {
                }
 
                data.append(" ");
-                    /*data.append(String.valueOf(noiseModel.getNormalizedRMS()));
-                    data.append(" ");
-                    data.append(String.valueOf(noiseModel.getNormalizedRLH()));
-                    data.append(" ");
-                    data.append(String.valueOf(noiseModel.getNormalizedVAR()));*/
+               /*data.append(String.valueOf(noiseModel.getNormalizedRMS()));
+               data.append(" ");
+               data.append(String.valueOf(noiseModel.getNormalizedRLH()));
+               data.append(" ");
+               data.append(String.valueOf(noiseModel.getNormalizedVAR()));*/
                data.append(String.valueOf(noiseModel.getEvent()));
                data.append(" ");
                data.append(String.valueOf(noiseModel.getIntensity()));

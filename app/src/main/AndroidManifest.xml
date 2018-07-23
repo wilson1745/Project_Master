@@ -18,7 +18,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="e.wilso.audiotester.fileprovider"
@@ -50,10 +49,14 @@
         <activity android:name=".advance.LanguageActivity" />
         <activity android:name=".advance.PersonalActivity" />
         <activity android:name=".SnoreActivity" />
+
         <receiver android:name=".alarm_modules.Alarm_Receiver" />
-        <service android:name=".alarm_modules.RingtonePlayingService"
-            android:enabled="true">
-        </service>
+
+        <service
+            android:name=".alarm_modules.RingtonePlayingService"
+            android:enabled="true"></service>
+
+        <activity android:name=".audiotest.modules.AudioViewLayout"></activity>
     </application>
 
 </manifest>
