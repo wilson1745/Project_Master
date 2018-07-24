@@ -8,5 +8,48 @@
         <item>Feedback</item>
     </string-array>
 
+    <string-array name="instructions_main">
+        <item>Welcome</item>
+        <item>Instructions</item>
+        <item>About Snoring</item>
+        <item>About Snoring &amp; Diabetes</item>
+        <item>FAQs</item>
+    </string-array>
+
+    <string-array name="welcome">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+    </string-array>
+
+    <string-array name="instructions">
+        <item>Introduction</item>
+        <item>Placement</item>
+        <item>Results</item>
+        <item>Important Disclaimer</item>
+    </string-array>
+
+    <string-array name="about_snoring">
+        <item>What is Snoring?</item>
+        <item>Risk Factors</item>
+        <item>Obstructive Sleep Apnea</item>
+        <item>Snoring Remedies</item>
+    </string-array>
+
+    <string-array name="about_diabetes">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+    </string-array>
+
+    <string-array name="faqs">
+        <item>1.</item>
+        <item>2.</item>
+        <item>3.</item>
+        <item>4.</item>
+    </string-array>
+
 </resources>
 

@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import e.wilso.project_master.menu.AdvanceFragment;
 import e.wilso.project_master.menu.HomeFragment;
+import e.wilso.project_master.menu.InstructFragment;
 import e.wilso.project_master.menu.SettingActivity;
 import e.wilso.project_master.menu.TrendFragment;
 
@@ -61,6 +62,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
       else if(id == R.id.nav_advance) {
          android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
          ft.replace(R.id.flMain, new AdvanceFragment()).addToBackStack(null);
+         ft.commit();
+      }
+      else if(id == R.id.nav_instruct) {
+         android.support.v4.app.FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+         ft.replace(R.id.flMain, new InstructFragment()).addToBackStack(null);
          ft.commit();
       }
 

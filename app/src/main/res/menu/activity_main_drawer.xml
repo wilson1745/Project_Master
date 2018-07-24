@@ -17,6 +17,10 @@
             android:id="@+id/nav_advance"
             android:icon="@drawable/ic_menu_camera"
             android:title="Advance Option"/>
+        <item
+            android:id="@+id/nav_instruct"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Instruction"/>
 
 
 
