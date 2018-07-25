@@ -31,7 +31,11 @@
     </string-array>
 
     <string-array name="introduction_cont">
-        <item>說明資深媒體人李艷秋今天恍然大悟地說，「原來，背後靈是他？」她在臉書上貼文說，管中閔在「拔管事件」發生半年後首次受訪，他說這麼一個職務，五院中有四院介入，光行政權中就有六、七個部會共同參與拔管，如此龐大的政治力量阻止他上任，「這一定有很複雜的原因，只是我很難理解為什麼需要花費這麼大的力氣』。</item>
+        <item>
+            SnoreDebby is an app that records, measures and tracks your snoring.
+            It helps thousands of people just like you to gain insights into their snoring.\n\nYou can share SnoreDebby&#180;s reports with your doctor or dentist,
+            or experiment with snoring remedies and lifestyle changes and track their impact over time.
+        </item>
     </string-array>
     <string-array name="placement_cont">
         <item>放置</item>

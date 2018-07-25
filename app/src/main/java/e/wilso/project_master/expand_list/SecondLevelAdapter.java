@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -80,15 +81,22 @@ public class SecondLevelAdapter extends BaseExpandableListAdapter {
    public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
       String headerTitle = (String) getGroup(groupPosition);
 
-      if (convertView == null) {
+      if(convertView == null) {
          LayoutInflater layoutInflater = (LayoutInflater) this.mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
          convertView = layoutInflater.inflate(R.layout.drawer_list_group_second, parent, false);
       }
 
+      ImageView imageView = convertView.findViewById(R.id.explist_indicator);
       TextView lblListHeader = (TextView) convertView.findViewById(R.id.lblListHeader);
       lblListHeader.setText(headerTitle);
       //lblListHeader.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
       //lblListHeader.setTextColor(Color.BLACK);
+
+      if(getChildrenCount(groupPosition) == 0) imageView.setVisibility(View.GONE);
+      else {
+         if(isExpanded == true) imageView.setImageResource(R.drawable.ic_action_collapse);
+         else imageView.setImageResource(R.drawable.ic_action_expand);
+      }
 
       return convertView;
    }

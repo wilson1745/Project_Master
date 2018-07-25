@@ -77,7 +77,6 @@ public class AudioRecorder extends Thread {
 
       while(!this.stopped) {
          N = recorder.read(buffer, 0, buffer.length);
-
          process(buffer);
       }
       recorder.stop();

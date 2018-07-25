@@ -12,6 +12,7 @@ public class FeatureExtractor {
    public void update(short[] buffer) {
       lowFreq = new float[buffer.length];
       highFreq = new float[buffer.length];
+
       noiseModel.addRLH(calculateRLH(buffer));
       noiseModel.addRMS(calculateRMS(buffer));
       noiseModel.addVAR(calculateVar(buffer));

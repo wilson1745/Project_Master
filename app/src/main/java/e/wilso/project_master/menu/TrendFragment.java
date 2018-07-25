@@ -15,15 +15,12 @@ import e.wilso.project_master.R;
  */
 public class TrendFragment extends Fragment {
 
-
-
    public TrendFragment() {
       // Required empty public constructor
    }
 
    @Override
    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
       ((MainActivity)getActivity()).setActionBartTitle("Sleep Trend");
 
       // Inflate the layout for this fragment
