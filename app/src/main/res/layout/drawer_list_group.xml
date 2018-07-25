@@ -1,17 +1,17 @@
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
 
     <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:src="@drawable/group_statelist"
-            android:id="@+id/explist_indicator"
-            android:layout_gravity="center_vertical"
-            android:gravity="center_vertical"
-            android:layout_width="30px"
-            android:layout_height="30px"/>
+        android:src="@drawable/group_statelist"
+        android:id="@+id/explist_indicator"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_width="30px"
+        android:layout_height="30px"/>
 
     <TextView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/lblListHeader"
@@ -22,6 +22,6 @@
         android:minHeight="?android:attr/listPreferredItemHeightSmall"
         android:paddingLeft="5dp"
         android:textAppearance="?android:attr/textAppearanceListItemSmall" />
-    </LinearLayout>
+</LinearLayout>
 
 

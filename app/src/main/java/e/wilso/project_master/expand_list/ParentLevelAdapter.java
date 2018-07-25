@@ -91,6 +91,7 @@ public class ParentLevelAdapter extends BaseExpandableListAdapter {
                    case "Important Disclaimer":
                       mItemChildOfChild = mContext.getResources().getStringArray(R.array.important_disclaimer_cont);
                       break;
+
                    case "What is Snoring?":
                       mItemChildOfChild = mContext.getResources().getStringArray(R.array.what_cont);
                       break;
@@ -101,8 +102,19 @@ public class ParentLevelAdapter extends BaseExpandableListAdapter {
                       mItemChildOfChild = mContext.getResources().getStringArray(R.array.obstructive_cont);
                       break;
                    case "Snoring Remedies":
-                      mItemChildOfChild = mContext.getResources().getStringArray(R.array.remedies_cont);
+                      mItemChildOfChild = mContext.getResources().getStringArray(R.array.remedies_cont );
                       break;
+
+                   case "What is Type 2 Diabetes?":
+                      mItemChildOfChild = mContext.getResources().getStringArray(R.array.what_t2d );
+                      break;
+                   case "Sleep & Type 2 Diabetes":
+                      mItemChildOfChild = mContext.getResources().getStringArray(R.array.sleep_t2d );
+                      break;
+                   case "How to improve it":
+                      mItemChildOfChild = mContext.getResources().getStringArray(R.array.advice_t2d );
+                      break;
+
                    default:
                       mItemChildOfChild = mContext.getResources().getStringArray(R.array.null_cont);
                       break;

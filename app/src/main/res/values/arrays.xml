@@ -31,7 +31,7 @@
     </string-array>
 
     <string-array name="introduction_cont">
-        <item>說明</item>
+        <item>說明資深媒體人李艷秋今天恍然大悟地說，「原來，背後靈是他？」她在臉書上貼文說，管中閔在「拔管事件」發生半年後首次受訪，他說這麼一個職務，五院中有四院介入，光行政權中就有六、七個部會共同參與拔管，如此龐大的政治力量阻止他上任，「這一定有很複雜的原因，只是我很難理解為什麼需要花費這麼大的力氣』。</item>
     </string-array>
     <string-array name="placement_cont">
         <item>放置</item>
@@ -64,10 +64,19 @@
     </string-array>
 
     <string-array name="about_diabetes">
-        <item>1.</item>
-        <item>2.</item>
-        <item>3.</item>
-        <item>4.</item>
+        <item>What is Type 2 Diabetes?</item>
+        <item>Sleep &amp; Type 2 Diabetes</item>
+        <item>How to improve it</item>
+    </string-array>
+
+    <string-array name="what_t2d">
+        <item>什麼是第二型糖尿病？</item>
+    </string-array>
+    <string-array name="sleep_t2d">
+        <item>睡眠與糖尿病的關係</item>
+    </string-array>
+    <string-array name="advice_t2d">
+        <item>如何改善</item>
     </string-array>
 
     <string-array name="faqs">

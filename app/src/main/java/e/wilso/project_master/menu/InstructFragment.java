@@ -45,6 +45,8 @@ public class InstructFragment extends Fragment {
          mExpandableListView.setAdapter(parentLevelAdapter);
       }
 
+      mExpandableListView.setIndicatorBounds(mExpandableListView.getWidth()-40, mExpandableListView.getWidth());
+
       mExpandableListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
          @Override
          public void onGroupExpand(int groupPosition) {

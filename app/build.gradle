@@ -31,5 +31,7 @@ dependencies {
     implementation 'com.sun.mail:android-activation:1.5.5'
     implementation 'com.android.support:design:27.1.1'
     implementation 'io.github.privacystreams:privacystreams-android-sdk:0.1.7'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.2.30"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.2.40"
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
 }

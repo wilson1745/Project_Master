@@ -20,7 +20,7 @@
         <item
             android:id="@+id/nav_instruct"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Instruction"/>
+            android:title="Instructions"/>
 
 
 
