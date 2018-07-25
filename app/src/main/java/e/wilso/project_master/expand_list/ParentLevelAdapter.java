@@ -142,6 +142,7 @@ public class ParentLevelAdapter extends BaseExpandableListAdapter {
    public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
       final CustomExpListView secondLevelExpListView = new CustomExpListView(this.mContext);
       String parentNode = (String) getGroup(groupPosition);
+
       secondLevelExpListView.setAdapter(new SecondLevelAdapter(this.mContext, mListData_SecondLevel_Map.get(parentNode), mListData_ThirdLevel_Map));
       secondLevelExpListView.setGroupIndicator(null);
       // 只能展開一個group 上一個group會關閉
