@@ -33,18 +33,36 @@
     <string-array name="introduction_cont">
         <item>
             SnoreDebby is an app that records, measures and tracks your snoring.
-            It helps thousands of people just like you to gain insights into their snoring.\n\nYou can share SnoreDebby&#180;s reports with your doctor or dentist,
+            It helps thousands of people just like you to gain insights into their snoring.
+            \n\nYou can share SnoreDebby&#8217;s reports with your doctor or dentist,
             or experiment with snoring remedies and lifestyle changes and track their impact over time.
         </item>
     </string-array>
     <string-array name="placement_cont">
-        <item>放置</item>
+        <item>
+            It is recommended placing the device next to your bed with the microphone facing towards you.
+            Keep the charger connected if possible to ensure full night monitoring and fully charged device
+            the next day.\n\nPlacing the device face down will dim the screen and reduce battery usage.
+            \n\nNote: SnoreDebby is sensitive to ambient noise and works best in quiet environment.
+        </item>
     </string-array>
     <string-array name="results_cont">
-        <item>結果</item>
+        <item>
+            After each night you&#8217;ll receive a report showing you when and how loudly you snored with
+            a selection of audio samples.\n\nYou&#8217;ll also get a Snore Score for the night, which is a
+            measure of snoring intensity. If you experiment with snoring remedies or track factors you can
+            see how they impact your snoring by the change in your Snore Score.\n\nDon&#8217;t worry too much
+            about disk usage, one night of samples only contents 2-4 MB at the default setting.
+            You can also delete unwanted sound files and optionally activate full-night recording if you
+            want to hear everything.
+        </item>
     </string-array>
     <string-array name="important_disclaimer_cont">
-        <item>重要資訊</item>
+        <item>
+            SnoreDebby is not a replacement for a professional sleep study and diagnosis. Snoring can be
+            symptomatic of serious sleep disorders (see the section on obstructive sleep apnea below) and you
+            should seek immediate medical attention if you are concerned by your symptoms.
+        </item>
     </string-array>
 
     <string-array name="about_snoring">
@@ -55,7 +73,15 @@
     </string-array>
 
     <string-array name="what_cont">
-        <item>什麼是打呼？</item>
+        <item>
+            Snoring is noisy breathing whilst you sleep caused by the vibration of soft tissue in your head and neck.
+            \n\nThe exact sound you make will depend on the types of soft tissue that is vibrating. For example,
+            if the soft tissue at the back of your nose vibrates it is likely you will produce a pinched nasal sound.
+            If the tissues at the top of your mouth and the back of your throat vibrate, you will produce a louder, more
+            guttural, throaty sound. In most cases, snoring is caused by a combination of areas that are vibrating or blocked.
+            \n\nWhile you sleep your airways relax and narrows. This affects air pressure within your airways, which causes
+            the tissue to vibrate. This can also happen if your airways are partially blocked, for example if you have a cold.
+        </item>
     </string-array>
     <string-array name="risk_cont">
         <item>風險因素</item>
